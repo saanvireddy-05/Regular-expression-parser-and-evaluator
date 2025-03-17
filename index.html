@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Regular Expression Parser and Evaluator</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Regular Expression Parser and Evaluator</h1>
+
+        <label for="regexPattern">Enter Regex Pattern:</label>
+        <input type="text" id="regexPattern" placeholder="Enter regex...">
+
+        <label for="testString">Enter Test String:</label>
+        <input type="text" id="testString" placeholder="Enter test string...">
+
+        <button onclick="processRegex()">Process Regex</button>
+
+        <h3>Match Result:</h3>
+        <div id="matchResult"></div>
+
+        <button onclick="showTokens()">Show Tokens</button>
+        <h3>Tokens:</h3>
+        <pre id="tokens"></pre>
+
+        <button onclick="showParseTree()">Show Parse Tree</button>
+        <h3>Parse Tree:</h3>
+        <pre id="parseTree"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
